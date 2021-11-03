@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WEB - CSS</title>
+  <title>WEB</title>
   <meta charset="utf-8">
   <style>
     a {
       color: green;
       text-decoration: none;
     }
-    .saw {
+    #active {
       color: red;
+    }
+    body {
+      margin:0;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin:0;
+    }
+    ol {
+      /* border-right: 1px solid gray; */
+      width:100px;
+      margin: 0;
+      padding: 20px;
+    }
+    div {
+      border: 0px solid black;
+    }
+    #grid {
+      border: 0px solid blue;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #name {
+      border-right: 1px solid black;
+      margin-right: 10px;
     }
   </style>
 </head>
 <body>
-  <h1><a href="index.html" class="saw">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <!-- <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol> -->
+  <h1><a href="index.html" id="active">WEB</a></h1>
+  <div id="grid">
+    <div id="name">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+      </ol>
+    </div>
+    <div>
+      <h2>Web</h2>
+      <p>The World Wide Web—commonly referred to as WWW, W3, or the Web—is an interconnected system of public webpages accessible through the Internet. The Web is not the same as the Internet: the Web is one of many applications built on top of the Internet.
 
-  <h1>Web</h1>
-  <p>The World Wide Web—commonly referred to as WWW, W3, or the Web—is an interconnected system of public webpages accessible through the Internet. The Web is not the same as the Internet: the Web is one of many applications built on top of the Internet.
-
-  Tim Berners-Lee proposed the architecture of what became known as the World Wide Web. He created the first web server, web browser, and webpage on his computer at the CERN physics research lab in 1990. In 1991, he announced his creation on the alt.hypertext newsgroup, marking the moment the Web was first made public.</p>
+      Tim Berners-Lee proposed the architecture of what became known as the World Wide Web. He created the first web server, web browser, and webpage on his computer at the CERN physics research lab in 1990. In 1991, he announced his creation on the alt.hypertext newsgroup, marking the moment the Web was first made public.</p>
+    </div>
+  </div>
 </body>
 </html>
