@@ -36,3 +36,5 @@ function nightdayhandler(self)
     acolorhandler(dicDayNight[self.value].acolor);
     }
 }
+
+
